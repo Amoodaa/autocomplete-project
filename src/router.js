@@ -9,13 +9,10 @@ function getPath(endpoint) {
             case 'script.js':
                 return './public/' + fileName;
                 break;
-
+            default:
+                throw new Error('not supported or not valid');
         }
-    } else {
-        throw err;
-        return;
     }
-
 }
 
 function getType(endpoint) {
@@ -49,4 +46,8 @@ function getType(endpoint) {
         return;
     }
 }
-module.exports = { getPath , getType};
+
+module.exports = {
+    getPath,
+    getType
+};
