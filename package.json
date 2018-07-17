@@ -1,0 +1,19 @@
+{
+  "name": "autocompleteproject",
+  "version": "1.0.0",
+  "description": "Small application to practice node.js",
+  "main": "server.js",
+  "scripts": {
+    "test": "test.js",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "node.js"
+  ],
+  "author": "Imad Shatali",
+  "license": "ISC",
+  "dependencies": {
+    "nodemon": "^1.18.2",
+    "tape": "^4.9.1"
+  }
+}
